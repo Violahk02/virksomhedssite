@@ -173,3 +173,20 @@ nav {
     aspect-ratio: 145 /139;
   }
 }
+
+/* FOOTER */
+
+.grid_1-1-1 {
+  text-align: center;
+  .info1 {
+    margin: 10px;
+    .info2 {
+      margin: 10px;
+    }
+  }
+}
+
+.footerlogo {
+  width: 25%;
+  text-align: center;
+}
