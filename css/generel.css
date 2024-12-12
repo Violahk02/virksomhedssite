@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+/* Font styling */
+h1 {
+}
+
+h2 {
+  font-family: Oooh Baby;
+}
+
+p {
+  font-family: Montserrat;
+}
+
 img {
   max-width: 100%;
 }
@@ -24,13 +36,15 @@ header {
 nav {
   display: flex;
   align-items: center;
+  margin: 20px;
+  flex-direction: row-reverse;
 }
 
 .menu {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 20px;
+  /* padding: 20px; */
   margin-left: auto; /* Skubber knapperne til højre */
   margin-right: 0; /* Fjerner den højre margin */
   text-decoration: none; /* Removes the underline */
@@ -76,7 +90,7 @@ nav {
   position: absolute;
   top: 4%;
   left: 2%;
-  width: 90px;
+  width: 75px;
   aspect-ratio: 145 /139;
 }
 
@@ -89,7 +103,7 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #176026;
+  background-color: black;
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -140,14 +154,12 @@ nav {
   }
 }
 
-/* Font styling */
-h1 {
-}
-
-h2 {
-  font-family: Oooh Baby;
-}
-
-p {
-  font-family: Montserrat;
+@media (min-width: 800px) {
+  .logo {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    width: 90px;
+    aspect-ratio: 145 /139;
+  }
 }
