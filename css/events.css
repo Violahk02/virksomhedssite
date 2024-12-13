@@ -53,3 +53,11 @@ img {
 .pilned {
   width: 10%;
 }
+
+@media (min-width: 800px) {
+  .dato {
+    display: grid;
+    grid-template-columns: 1fr repeat(4);
+    grid-column: span 2;
+  }
+}
