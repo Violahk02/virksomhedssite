@@ -176,17 +176,42 @@ nav {
 
 /* FOOTER */
 
+.horisontal_linje {
+  border-bottom: 1px solid;
+  margin-top: 5px;
+  width: 100%;
+  justify-items: center;
+}
+
+.dotted_linje {
+  width: 80%;
+  height: 5px;
+  border-top: 3px dotted black;
+  margin: 0 auto;
+}
+
 .grid_1-1-1 {
   text-align: center;
-  .info1 {
-    margin: 10px;
-    .info2 {
-      margin: 10px;
-    }
-  }
+  line-height: 3cap;
+}
+
+.info1 {
+  margin: 20px;
+}
+
+.info2 {
+  margin: 20px;
+}
+
+.facebook_knap {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template: span 2; */
+  width: 15%;
+  margin-bottom: 20px;
 }
 
 .footerlogo {
-  width: 25%;
-  text-align: center;
+  width: 30%;
+  margin: 30px;
 }
