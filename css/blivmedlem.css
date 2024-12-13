@@ -25,3 +25,9 @@ hr.dashed {
   border-top: 1px dashed #bbb;
   border-bottom: none;
 }
+
+.grid_1-1 {
+  --cols: 1fr 1fr;
+  display: grid;
+  grid-template-columns: var(--cols);
+}
