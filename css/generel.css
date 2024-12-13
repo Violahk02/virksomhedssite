@@ -194,6 +194,8 @@ nav {
 .grid_1-1-1 {
   text-align: center;
   line-height: 3cap;
+  display: grid;
+  justify-items: center;
 }
 
 .info1 {
