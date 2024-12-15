@@ -218,3 +218,27 @@ nav {
   width: 30%;
   margin: 30px;
 }
+
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .dotted_linje {
+    display: none;
+  }
+
+  .info1,
+  .info2 {
+    text-align: left;
+  }
+
+  .facebook_knap {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: span 2; */
+    width: 20%;
+    margin-bottom: 20px;
+  }
+}
