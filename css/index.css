@@ -60,7 +60,8 @@ dotlottie-player {
   margin: 20px;
   text-align: center;
   margin-bottom: 40px;
-  line-height: 1.5;
+  line-height: 2;
+  padding: 10px;
 }
 .p_index p {
   margin-bottom: 20px; /* Tilføjer plads under hvert afsnit */
@@ -75,10 +76,14 @@ dotlottie-player {
 .form_index input {
   display: block;
   width: 80%;
-  margin: 0 auto 15px auto; /* Centreret med afstand under */
-  padding: 10px; /* Indvendig padding */
-  border: 1px solid #ccc; /* Lys grå kant */
-  border-radius: 20px; /* Runde hjørner */
+  max-width: 300px;
+  margin: 0 auto; /* Centrerer horisontalt */
+  margin-top: -30px;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
   text-align: center;
   outline: none;
   background-color: transparent;
