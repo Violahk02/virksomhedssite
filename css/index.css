@@ -15,7 +15,6 @@ video {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 30px;
 }
 
 /* Hero section styling for positioning */
@@ -52,17 +51,51 @@ dotlottie-player {
 }
 
 .h2_index {
+  margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .p_index {
-  margin: 10px;
+  margin: 20px;
   text-align: center;
   margin-bottom: 40px;
+  line-height: 1.5;
+}
+.p_index p {
+  margin-bottom: 20px; /* Tilføjer plads under hvert afsnit */
 }
 
 .img1 {
-  margin: 10px;
+  margin: 20px;
   margin-bottom: 40px;
+}
+
+/* Styling af inputfelt */
+.form_index input {
+  display: block;
+  width: 80%;
+  margin: 0 auto 15px auto; /* Centreret med afstand under */
+  padding: 10px; /* Indvendig padding */
+  border: 1px solid #ccc; /* Lys grå kant */
+  border-radius: 20px; /* Runde hjørner */
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Styling af knap */
+.form_index button {
+  display: block;
+  margin: 0 auto; /* Centrerer knappen */
+  padding: 8px 20px; /* Polstring indeni knappen */
+  background-color: transparent; /* transparent baggrund */
+  border: 1px solid #000; /* Sort kant */
+  border-radius: 20px; /* Runde hjørner */
+  cursor: pointer;
+  margin-bottom: -10px;
+}
+
+.form_index button:hover {
+  background-color: rgb(245, 237, 227); /* Lys baggrund ved hover */
 }
