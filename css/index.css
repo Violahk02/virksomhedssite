@@ -50,3 +50,19 @@ dotlottie-player {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+.h2_index {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.p_index {
+  margin: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.img1 {
+  margin: 10px;
+  margin-bottom: 40px;
+}
