@@ -9,6 +9,18 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Billeder under de forskellige events. */
+.event {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  aspect-ratio: 355/321;
+  object-fit: cover;
 }
 
 /* Stylin af event_container, h1 og p */
@@ -17,7 +29,9 @@ img {
   text-align: center;
   margin: 40px;
   p {
-    margin: 20px;
+    margin: 20px auto; /* Auto margin for at centrere */
+    max-width: 70ch;
+    display: block; /* Sikrer at p er et blokniveau element */
   }
 }
 
@@ -54,12 +68,46 @@ img {
   width: 8%;
 }
 
-/* Dropdown sektion, også kaldet accordion */
+/* desktop version */
+@media (min-width: 800px) {
+  /* .kalender_order {
+    display: grid;
+    grid-template-columns: 1fr repeat(3fr);
+    .tid {
+      grid-column: 3;
+    }
+  } */
 
+  .kalender_order {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: -25%;
+    .tid {
+      margin-top: 6.5%;
+    }
+  }
+
+  .grid_1-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .grid_1-1 p {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Billedet tager auto-bredde, teksten tager resten */
+    gap: 20px;
+    align-items: start;
+  }
+}
+
+/* Dropdown sektion, også kaldet accordion */
 ul {
   p {
     line-height: 2rem;
-    margin: 15px;
+    margin: 20px;
   }
 }
 
@@ -97,15 +145,15 @@ ul li i:after {
   position: absolute;
   background-color: #000;
   width: 3px;
-  height: 16px;
+  height: 20px;
 }
 
 ul li i:before {
-  transform: translate(2px, 0) rotate(45deg);
+  transform: translate(2px, -80px) rotate(45deg);
 }
 
 ul li i:after {
-  transform: translate(2px, 0) rotate(-45deg);
+  transform: translate(2px, -80px) rotate(-45deg);
 }
 
 ul li input[type="checkbox"] {
