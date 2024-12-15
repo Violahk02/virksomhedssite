@@ -17,3 +17,36 @@ video {
   display: block;
   margin-bottom: 30px;
 }
+
+/* Hero section styling for positioning */
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Lottie animation styling */
+dotlottie-player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 350px;
+  height: 350px;
+
+  /* Uendelig rotation med konstant hastighed */
+  animation: rotateAnimation 15s linear infinite;
+  will-change: transform; /* Forbedrer ydeevne og forhindrer throttling */
+}
+
+/* Keyframes for rotation */
+@keyframes rotateAnimation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
