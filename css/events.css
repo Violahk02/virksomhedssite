@@ -71,6 +71,14 @@ img {
 
 /* desktop version */
 @media (min-width: 800px) {
+  .kalender {
+    margin-bottom: 65px;
+  }
+
+  .kalender_boks {
+    margin: 40px;
+  }
+
   .kalender_order {
     display: flex;
     justify-content: center;
@@ -95,22 +103,22 @@ img {
   }
 
   .grid_1-1 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* margin: 30px; */
   }
 
-  .grid_1-1 p {
+  /* .grid_1-1 p {
     display: grid;
     grid-template-columns: 1fr 2fr; /* Billedet tager auto-bredde, teksten tager resten */
-    gap: 20px;
+  /* gap: 20px;
     align-items: start;
-  }
+  } */
 }
 
 /* Dropdown sektion, også kaldet accordion */
-ul {
+.dropdown {
   p {
     line-height: 2rem;
     margin: 20px;
@@ -118,18 +126,18 @@ ul {
 }
 
 p,
-ul li i:before,
-ul li i:after {
+.dropdown li i:before,
+.dropdown li i:after {
   transition: all 0.25s ease-in-out;
 }
 
-ul {
+.dropdown {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ul li {
+.dropdown li {
   position: relative;
   padding: 0;
   margin: 0;
@@ -138,15 +146,15 @@ ul li {
   border-top: 1px dotted #dce7eb;
 }
 
-ul li i {
+.dropdown li i {
   position: absolute;
   transform: translate(-6px, 0);
   margin-top: 70px;
   right: 50%;
 }
 
-ul li i:before,
-ul li i:after {
+.dropdown li i:before,
+.dropdown li i:after {
   content: "";
   position: absolute;
   background-color: #000;
@@ -154,15 +162,15 @@ ul li i:after {
   height: 20px;
 }
 
-ul li i:before {
+.dropdown li i:before {
   transform: translate(2px, -80px) rotate(45deg);
 }
 
-ul li i:after {
+.dropdown li i:after {
   transform: translate(2px, -80px) rotate(-45deg);
 }
 
-ul li input[type="checkbox"] {
+.dropdown li input[type="checkbox"] {
   position: absolute;
   cursor: pointer;
   width: 100%;
@@ -171,39 +179,39 @@ ul li input[type="checkbox"] {
   opacity: 0;
 }
 
-ul li input[type="checkbox"]:checked ~ p {
+.dropdown li input[type="checkbox"]:checked ~ p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
   transform: translate(0, 50%);
 }
 
-ul li input[type="checkbox"]:checked ~ i:before {
+.dropdown li input[type="checkbox"]:checked ~ i:before {
   margin-top: -75px;
   height: 20px;
   transform: translate(6px, 0) rotate(45deg);
 }
 
-ul li input[type="checkbox"]:checked ~ i:after {
+.dropdown li input[type="checkbox"]:checked ~ i:after {
   margin-top: -75px;
   height: 20px;
   transform: translate(-6px, 0) rotate(-45deg);
 }
 
-ul li:nth-of-type(1) {
+.dropdown li:nth-of-type(1) {
   border-top: none;
   animation-delay: 0.5s;
 }
 
-ul li:nth-of-type(2) {
+.dropdown li:nth-of-type(2) {
   animation-delay: 0.75s;
 }
 
-ul li:nth-of-type(3) {
+.dropdown li:nth-of-type(3) {
   animation-delay: 1s;
 }
 
-ul li:last-of-type {
+.dropdown li:last-of-type {
   padding-bottom: 0;
 }
 
