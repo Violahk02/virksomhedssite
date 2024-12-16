@@ -24,8 +24,10 @@ h2 {
 }
 
 p,
-ul {
+ul,
+label {
   font-family: Montserrat;
+  line-height: 2;
 }
 
 img {
