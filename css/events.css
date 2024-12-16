@@ -125,7 +125,7 @@ img {
   }
 }
 
-p,
+.dropdown p,
 .dropdown li i:before,
 .dropdown li i:after {
   transition: all 0.25s ease-in-out;
@@ -215,9 +215,9 @@ p,
   padding-bottom: 0;
 }
 
-li {
+/* .dropdown li {
   animation: bounceInUp 1s ease both;
-}
+} */
 
 @-webkit-keyframes bounceInUp {
   0% {
