@@ -29,6 +29,7 @@ img {
   text-align: center;
   margin: 40px;
   line-height: 1.5rem;
+
   p {
     margin: 20px auto; /* Auto margin for at centrere */
     max-width: 70ch;
