@@ -189,11 +189,11 @@ nav {
   justify-items: center;
 }
 
-.dotted_linje {
+.horisontal_linje2 {
+  border-bottom: 1px solid;
+  margin-top: 5px;
   width: 80%;
-  height: 5px;
-  border-top: 3px dotted black;
-  margin: 0 auto;
+  justify-items: center;
 }
 
 .grid_1-1-1 {
@@ -212,10 +212,9 @@ nav {
 }
 
 .facebook_knap {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template: span 2; */
-  width: 15%;
+  display: flex;
+  justify-items: center;
+  width: 20%;
   margin-bottom: 20px;
 }
 
@@ -225,15 +224,12 @@ nav {
 }
 
 @media (min-width: 800px) {
-  h2 {
-    font-size: 2.5rem;
-  }
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .dotted_linje {
+  .horisontal_linje2 {
     display: none;
   }
 
@@ -246,7 +242,20 @@ nav {
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template: span 2; */
+
     width: 20%;
     margin-bottom: 20px;
+  }
+
+  .info1 {
+    margin: 20px;
+    border-right: 1px solid;
+    padding-right: 100px;
+  }
+
+  .info2 {
+    margin: 20px;
+    border-right: 1px solid;
+    padding-right: 150px;
   }
 }
