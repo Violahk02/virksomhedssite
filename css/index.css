@@ -106,5 +106,22 @@ dotlottie-player {
 }
 
 /* computersite */
+
 @media (min-width: 800px) {
+  video {
+    height: 86.5vh; /* Fylder hele visningshøjden */
+    object-fit: cover; /* Sørger for, at videoen beskæres uden at forvrænges */
+    display: block;
+  }
+
+  .hero {
+    position: relative;
+    height: 86.5vh; /* Hero-sektionen fylder hele skærmens højde */
+    overflow: hidden; /* Skjuler eventuelt overskydende indhold */
+  }
+  /* hero-animation (forstørres i computersite) */
+  dotlottie-player {
+    width: 600px;
+    height: 600px;
+  }
 }
