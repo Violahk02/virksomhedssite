@@ -124,4 +124,60 @@ dotlottie-player {
     width: 600px;
     height: 600px;
   }
+  /* Grid-container */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner med lige bredde */
+    grid-template-rows: auto auto; /* To rækker */
+    gap: 10px; /* Mellemrum mellem grid-items */
+    align-items: start; /* Justerer indhold øverst */
+  }
+
+  /* Billede i venstre kolonne */
+  .img1 {
+    grid-row: 1 / span 2; /* Strækker sig over begge rækker */
+    grid-column: 1 / 2; /* Placeres i første kolonne */
+  }
+
+  .img1 img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  /* h2 placeres øverst i højre kolonne */
+  .grid_1-1 h2 {
+    grid-row: 1 / 2; /* Første række */
+    grid-column: 2 / 3; /* Anden kolonne */
+    margin-top: 50px;
+    margin-bottom: -40px;
+  }
+
+  .grid_1-1 p {
+    grid-row: 2 / 3; /* Anden række */
+    grid-column: 2 / 3; /* Anden kolonne */
+    max-width: 500px;
+    text-align: left;
+
+    /* Flexbox til fuld centrering */
+    display: flex;
+    flex-direction: column; /* Holder flere p under hinanden */
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Fylder hele højden af grid-cellen */
+    margin: 0 auto; /* Centrerer bredden */
+  }
+
+  .nyhedsbrev_container p {
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Holder flere p under hinanden */
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Fylder hele højden af grid-cellen */
+    margin: 0 auto; /* Centrerer bredden */
+  }
 }
