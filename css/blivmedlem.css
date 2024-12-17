@@ -85,6 +85,15 @@ button:hover {
   background-color: rgb(245, 237, 227); /* Lys baggrund ved hover */
 }
 
+.grid_1-1 {
+  li {
+    font-size: 1.3rem;
+  }
+  p {
+    font: 1.3rem;
+  }
+}
+
 /* DESKTOP MEDIA QUERY */
 
 @media only screen and (min-width: 700px) {

@@ -248,11 +248,13 @@ nav {
     margin: 20px;
     border-right: 1px dashed #010101;
     padding-right: 100px;
+    border-bottom: 0px;
   }
 
   .info2 {
     margin: 20px;
     border-right: 1px dashed #010101;
     padding-right: 150px;
+    border-bottom: 0px;
   }
 }
