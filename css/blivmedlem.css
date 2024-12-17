@@ -1,17 +1,18 @@
 main {
+  /* max-width: 700px; */
+  margin: 0;
+  width: 100%;
   max-width: 700px;
-  margin: 0 3vw;
 }
 
 hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  margin-left: -9vw;
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-  width: 121%;
+  width: 100%;
 }
 
 hr.dashed {
@@ -23,14 +24,17 @@ main img {
   border-radius: 10px;
   object-fit: cover;
   gap: 8vw;
+  margin: 0 auto;
   margin-top: 4vh;
+  width: 100%;
+  height: auto;
 }
 
 #medlem_img1,
 #medlem_img3,
 #medlem_img4 {
-  width: 80%;
-  height: 80%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #medlem_img1 {
@@ -39,14 +43,21 @@ main img {
 
 #medlem_img2 {
   border-radius: 0px;
-  margin-bottom: 4vh;
-  margin-top: 4vh;
+  margin: 0 auto;
 }
 
 #medlem_img2,
 #medlem_img3,
 #medlem_img4 {
   aspect-ratio: 560 / 519;
+}
+
+#medlem_img1,
+#medlem_img2,
+#medlem_img3,
+#medlem_img4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #tilmeld-h2 {
@@ -63,29 +74,32 @@ p,
 ul,
 h2 {
   margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 /* FORMS STYLING */
 
+.member_form {
+  text-align: center;
+}
+
 input {
-  display: block;
   width: 50vw;
   margin: 0 auto;
   position: relative;
   border: 1px solid black;
   border-radius: 10px;
-  text-align: center;
   outline: none;
   background-color: white;
   padding: 10px;
-  margin-left: 16vw;
+  margin: 0 auto;
 }
 
 label {
   display: block;
-  text-align: start;
-  margin-left: 16vw;
+  text-align: center;
   margin-top: 2vh;
+  margin: 0 auto;
 }
 
 button {
@@ -125,5 +139,19 @@ button:hover {
   #medlem_img2 {
     display: grid;
     order: +1;
+  }
+
+  hr {
+    width: 122%;
+    margin-left: -9vw;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  main img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
