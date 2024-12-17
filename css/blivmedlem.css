@@ -23,6 +23,8 @@ main img {
 
 #medlem_img1 {
   aspect-ratio: 560 / 519;
+  width: 80%;
+  margin-left: 70px;
 }
 
 #medlem_img2 {
@@ -33,6 +35,8 @@ main img {
 #medlem_img3,
 #medlem_img4 {
   aspect-ratio: 560 / 519;
+  width: 80%;
+  margin-left: 50px;
 }
 
 hr.dashed {
