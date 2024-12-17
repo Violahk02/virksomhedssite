@@ -86,7 +86,7 @@ dotlottie-player {
   border-radius: 20px;
   text-align: center;
   outline: none;
-  background-color: transparent;
+  background-color: white;
 }
 
 /* Styling af knap */
@@ -94,7 +94,7 @@ dotlottie-player {
   display: block;
   margin: 0 auto; /* Centrerer knappen */
   padding: 8px 20px; /* Polstring indeni knappen */
-  background-color: transparent; /* transparent baggrund */
+  background-color: white; /* transparent baggrund */
   border: 1px solid #000; /* Sort kant */
   border-radius: 20px; /* Runde hjørner */
   cursor: pointer;
