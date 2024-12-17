@@ -193,13 +193,6 @@ nav {
   justify-items: center;
 }
 
-.horisontal_linje2 {
-  border-bottom: 1px solid;
-  margin-top: 5px;
-  width: 80%;
-  justify-items: center;
-}
-
 .grid_1-1-1 {
   text-align: center;
   line-height: 3cap;
@@ -209,10 +202,14 @@ nav {
 
 .info1 {
   margin: 20px;
+  border-bottom: 1px dashed #010101;
+  padding-bottom: 50px;
 }
 
 .info2 {
   margin: 20px;
+  border-bottom: 1px dashed #010101;
+  padding-bottom: 50px;
 }
 
 .facebook_knap {
@@ -243,23 +240,19 @@ nav {
   }
 
   .facebook_knap {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template: span 2; */
-
     width: 20%;
     margin-bottom: 20px;
   }
 
   .info1 {
     margin: 20px;
-    border-right: 1px solid;
+    border-right: 1px dashed #010101;
     padding-right: 100px;
   }
 
   .info2 {
     margin: 20px;
-    border-right: 1px solid;
+    border-right: 1px dashed #010101;
     padding-right: 150px;
   }
 }
