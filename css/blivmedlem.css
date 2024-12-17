@@ -7,18 +7,30 @@ hr {
   display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  margin-left: auto;
+  margin-left: -9vw;
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
+  width: 121%;
+}
+
+hr.dashed {
+  border-top: 1px dashed #bbb;
+  border-bottom: none;
 }
 
 main img {
   border-radius: 10px;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
   gap: 8vw;
+  margin-top: 4vh;
+}
+
+#medlem_img1,
+#medlem_img3,
+#medlem_img4 {
+  width: 80%;
+  height: 80%;
 }
 
 #medlem_img1 {
@@ -27,6 +39,8 @@ main img {
 
 #medlem_img2 {
   border-radius: 0px;
+  margin-bottom: 4vh;
+  margin-top: 4vh;
 }
 
 #medlem_img2,
@@ -35,14 +49,20 @@ main img {
   aspect-ratio: 560 / 519;
 }
 
-hr.dashed {
-  border-top: 1px dashed #bbb;
-  border-bottom: none;
-}
-
 #tilmeld-h2 {
   display: block;
   text-align: center;
+}
+
+p,
+ul {
+  font-size: 18px;
+}
+
+p,
+ul,
+h2 {
+  margin-top: 4vh;
 }
 
 /* FORMS STYLING */
@@ -64,19 +84,20 @@ input {
 label {
   display: block;
   text-align: start;
-
-  margin-left: 18vw;
+  margin-left: 16vw;
+  margin-top: 2vh;
 }
 
 button {
   display: block;
   margin: 0 auto; /* Centrerer knappen */
   padding: 8px 20px; /* Polstring indeni knappen */
-  background-color: transparent; /* transparent baggrund */
+  background-color: rgba(255, 255, 255, 0.583); /* transparent baggrund */
   border: 1px solid #000; /* Sort kant */
   border-radius: 20px; /* Runde hjørner */
   cursor: pointer;
-  margin-bottom: -10px;
+  margin-bottom: 4vh;
+  margin-top: 4vh;
   font-family: montserrat;
   font-size: 16px;
 }
