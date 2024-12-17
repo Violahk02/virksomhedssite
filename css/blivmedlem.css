@@ -1,7 +1,7 @@
-/* main {
+main {
   max-width: 700px;
   margin: 0 3vw;
-} */
+}
 
 hr {
   display: block;
@@ -23,8 +23,6 @@ main img {
 
 #medlem_img1 {
   aspect-ratio: 560 / 519;
-  width: 80%;
-  margin-left: 70px;
 }
 
 #medlem_img2 {
@@ -35,8 +33,6 @@ main img {
 #medlem_img3,
 #medlem_img4 {
   aspect-ratio: 560 / 519;
-  width: 80%;
-  margin-left: 50px;
 }
 
 hr.dashed {
@@ -62,21 +58,21 @@ input {
   outline: none;
   background-color: white;
   padding: 10px;
-  margin-left: 16.5vw;
+  margin-left: 16vw;
 }
 
 label {
   display: block;
   text-align: start;
 
-  margin-left: 16.5vw;
+  margin-left: 18vw;
 }
 
 button {
   display: block;
   margin: 0 auto; /* Centrerer knappen */
   padding: 8px 20px; /* Polstring indeni knappen */
-  background-color: white; /* transparent baggrund */
+  background-color: transparent; /* transparent baggrund */
   border: 1px solid #000; /* Sort kant */
   border-radius: 20px; /* Runde hjørner */
   cursor: pointer;
@@ -87,15 +83,6 @@ button {
 
 button:hover {
   background-color: rgb(245, 237, 227); /* Lys baggrund ved hover */
-}
-
-.grid_1-1 {
-  li {
-    font-size: 1.3rem;
-  }
-  p {
-    font: 1.3rem;
-  }
 }
 
 /* DESKTOP MEDIA QUERY */
