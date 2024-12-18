@@ -134,6 +134,11 @@ button:hover {
   background-color: rgb(245, 237, 227); /* Lys baggrund ved hover */
 }
 
+#tilmeld-h2 {
+  margin-bottom: 6vh;
+  margin-top: 6vh;
+}
+
 /* DESKTOP MEDIA QUERY */
 
 @media only screen and (min-width: 700px) {
