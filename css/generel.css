@@ -6,15 +6,19 @@
 
 /* h1 webfont */
 @font-face {
-  font-family: "h1 font";
+  font-family: "abhayalibre";
   src: url("../h1_webfont/abhayalibre-regular-webfont.woff2") format("woff2"), url("../h1_webfont/abhayalibre-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+html {
+  --mainFont: "abhayalibre";
+}
+
 /* Font styling */
 h1 {
-  font-family: "h1 font";
+  font-family: var(--mainFont);
   font-size: 3rem;
   margin: 50px;
   text-align: center;
@@ -108,7 +112,7 @@ nav {
 
 .logo {
   position: absolute;
-  top: 12%;
+  top: 3%;
   left: 2%;
   width: 75px;
   aspect-ratio: 145 /139;
@@ -225,6 +229,14 @@ nav {
 }
 
 @media (min-width: 800px) {
+  .logo {
+    position: absolute;
+    top: 11%;
+    left: 2%;
+    width: 87px;
+    aspect-ratio: 145 /139;
+  }
+
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
