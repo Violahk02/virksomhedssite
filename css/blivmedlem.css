@@ -1,8 +1,12 @@
+@media only screen and (max-width: 700px) {
+}
+
 main {
   /* max-width: 700px; */
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
-  max-width: 700px;
+  max-width: 400px;
+  display: block;
 }
 
 hr {
@@ -37,19 +41,16 @@ main img {
   margin: 0 auto;
 }
 
-#medlem_img1 {
-  aspect-ratio: 560 / 519;
-}
-
 #medlem_img2 {
   border-radius: 0px;
   margin: 0 auto;
 }
 
+#medlem_img1,
 #medlem_img2,
 #medlem_img3,
 #medlem_img4 {
-  aspect-ratio: 560 / 519;
+  aspect-ratio: 800 / 740;
 }
 
 #medlem_img1,
@@ -70,9 +71,18 @@ ul {
   font-size: 18px;
 }
 
-p,
+/* p,
 ul,
 h2 {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+} */
+
+h2 {
+  margin-top: 2vh;
+}
+
+.p-tekst {
   margin-top: 4vh;
   margin-bottom: 4vh;
 }
@@ -102,7 +112,7 @@ label {
   margin: 0 auto;
 }
 
-button {
+.signup-button {
   display: block;
   margin: 0 auto; /* Centrerer knappen */
   padding: 8px 20px; /* Polstring indeni knappen */
@@ -110,10 +120,14 @@ button {
   border: 1px solid #000; /* Sort kant */
   border-radius: 20px; /* Runde hjørner */
   cursor: pointer;
-  margin-bottom: 4vh;
   margin-top: 4vh;
   font-family: montserrat;
   font-size: 16px;
+  margin-bottom: 4vh;
+}
+
+.facebook_knap {
+  margin-top: 20px;
 }
 
 button:hover {
@@ -139,6 +153,7 @@ button:hover {
   #medlem_img2 {
     display: grid;
     order: +1;
+    width: 94%;
   }
 
   hr {
